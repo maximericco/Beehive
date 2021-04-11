@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="http://www.nextlevelformation.fr/wp-content/uploads/2015/01/pulsation.png">
   <title>Next-Level</title>
 </head>
 
@@ -12,7 +13,9 @@
   <div class="flex">
     <aside id="nav-content" class="sm:block sm:w-24 lg:w-52 hidden fixed w-52 h-full top-0">
       <div class="flex h-16 bg-gray-700">
-        <img class="sm:w-20 sm:visible lg:w-36 invisible m-auto"
+        <img class="lg:hidden m-auto w-11 h-11 bg-red-400 rounded-full border-2"
+          src="http://www.nextlevelformation.fr/wp-content/uploads/2015/01/pulsation.png" alt="logo">
+        <img class="sm:w-20 sm:visible lg:block lg:w-36 hidden invisible m-auto"
           src="http://www.nextlevelformation.fr/wp-content/themes/nextlevel/images/logo.png" alt="logo">
       </div>
       <div class="h-full pb-32 bg-gray-100 bg-gray-100">
@@ -20,7 +23,7 @@
           <a href="#">
             <li class="sm:pl-0 sm:py-3 lg:pl-10 lg:py-5 flex py-5 pl-10 text-gray-700 hover:text-red-600">
               <svg xmlns="http://www.w3.org/2000/svg"
-                class="sm:m-auto sm:h-12 sm:w-12 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
+                class="sm:m-auto sm:h-11 sm:w-11 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
@@ -31,18 +34,19 @@
           <a href="#">
             <li class="sm:pl-0 sm:py-3 lg:pl-10 lg:py-5  flex py-5 pl-10 text-gray-700 hover:text-red-600">
               <svg xmlns="http://www.w3.org/2000/svg"
-                class="sm:m-auto sm:h-12 sm:w-12 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
+                class="sm:m-auto sm:h-11 sm:w-11 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
               <p class="sm:hidden lg:block">Prestations</p>
+              <Tooltip pointer=middle position=top text="Middle Top" show />
             </li>
           </a>
           <a href="#">
             <li class="sm:pl-0 sm:py-3 lg:pl-10 lg:py-5 flex py-5 pl-10 text-gray-700 hover:text-red-600">
               <svg xmlns="http://www.w3.org/2000/svg"
-                class="sm:m-auto sm:h-12 sm:w-12 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
+                class="sm:m-auto sm:h-11 sm:w-11 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M12 14l9-5-9-5-9 5 9 5z" />
                 <path
@@ -56,7 +60,7 @@
           <a href="#">
             <li class="sm:pl-0 sm:py-3 lg:pl-10 lg:py-5 flex py-5 pl-10 text-gray-700 hover:text-red-600">
               <svg xmlns="http://www.w3.org/2000/svg"
-                class="sm:m-auto sm:h-12 sm:w-12 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
+                class="sm:m-auto sm:h-11 sm:w-11 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -67,7 +71,7 @@
           <a href="#">
             <li class="sm:pl-0 sm:py-3 lg:pl-10 lg:py-5 flex py-5 pl-10 text-gray-700 hover:text-red-600">
               <svg xmlns="http://www.w3.org/2000/svg"
-                class="sm:m-auto sm:h-12 sm:w-12 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
+                class="sm:m-auto sm:h-11 sm:w-11 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -78,7 +82,7 @@
           <a href="#">
             <li class="sm:pl-0 sm:py-3 lg:pl-10 lg:py-5 flex py-5 pl-10 text-gray-700 hover:text-red-600">
               <svg xmlns="http://www.w3.org/2000/svg"
-                class="sm:m-auto sm:h-12 sm:w-12 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
+                class="sm:m-auto sm:h-11 sm:w-11 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
@@ -89,7 +93,7 @@
           <a href="#">
             <li class="sm:pl-0 sm:py-3 lg:pl-10 lg:py-5 flex py-5 pl-10 text-gray-700 hover:text-red-600">
               <svg xmlns="http://www.w3.org/2000/svg"
-                class="sm:m-auto sm:h-12 sm:w-12 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
+                class="sm:m-auto sm:h-11 sm:w-11 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -100,7 +104,7 @@
           <a href="#">
             <li class="sm:pl-0 sm:py-3 lg:pl-10 lg:py-5 flex py-5 pl-10 text-gray-700 hover:text-red-600">
               <svg xmlns="http://www.w3.org/2000/svg"
-                class="sm:m-auto sm:h-12 sm:w-12 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
+                class="sm:m-auto sm:h-11 sm:w-11 sm:p-2 sm:bg-white sm:rounded-full lg:m-0 lg:w-6 lg:h-6 lg:p-0 lg:mr-4 lg:bg-gray-100 w-6 h-6 mr-4"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -111,10 +115,10 @@
         </ul>
 
       </div>
-      <div class="sm:hidden lg:flex h-16 w-52 fixed px-5 bottom-0 bg-gray-100 flex justify-around items-center">
-        <img class="w-10 h-10 mr-4 rounded-full"
-          src="https://www.reussirmavie.net/photo/art/grande/4917230-7338907.jpg?v=1517523206" alt="profil">
-        <a class="text-gray-700 hover:text-red-600" href="#">Déconnecter</a>
+      <div class="sm:w-24 lg:w-52 lg:flex fixed w-52 h-16 px-5 bottom-0 bg-gray-100 flex justify-around items-center">
+        <a href="#"><img class="sm:mr-0 lg:mr-4 w-10 h-10 mr-4 rounded-full"
+            src="https://www.reussirmavie.net/photo/art/grande/4917230-7338907.jpg?v=1517523206" alt="profil"></a>
+        <a class="sm:hidden lg:block text-gray-700 hover:text-red-600" href="#">Déconnecter</a>
       </div>
     </aside>
 
@@ -129,15 +133,15 @@
             </svg>
           </button>
         </div>
-        <img class="sm:hidden w-36 ml-10"
-          src="http://www.nextlevelformation.fr/wp-content/themes/nextlevel/images/logo.png" alt="logo">
+        <img class="sm:hidden w-36" src="http://www.nextlevelformation.fr/wp-content/themes/nextlevel/images/logo.png"
+          alt="logo">
         <ul class="sm:flex hidden text-lg py-4 text-white ">
           <li><a href="#" class="hover:text-red-500">Prestations</a></li>
           <li><span class="mx-2">/</span></li>
           <li>BNP - Lyon</li>
         </ul>
         <button
-          class="sm:py-2 sm:px-10 sm:text-gray-600 sm:bg-white sm:border-gray-300 py-1 px-3 ml-2 text-sm text-white bg-red-500 border-2 focus:outline-none rounded-full font-semibold transition hover:border-white hover:text-white hover:bg-red-500 min-w-32">
+          class="sm:py-2 sm:px-10 sm:text-gray-600 sm:bg-white sm:border-gray-300 py-1 px-3 text-sm text-white bg-red-500 border-2 focus:outline-none rounded-full font-semibold transition hover:border-white hover:text-white hover:bg-red-500 min-w-32">
           Action
         </button>
       </nav>
@@ -149,6 +153,7 @@
       <div class="h-36 mx-12 mt-12 bg-white shadow-xl"></div>
     </main>
   </div>
+
 
 
   <script>
